@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mailcue — Privacy Policy</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #1a1714; background: #FAF8F5; line-height: 1.7; }
+  .container { max-width: 640px; margin: 0 auto; padding: 48px 24px; }
+  h1 { font-size: 28px; font-weight: 700; margin-bottom: 4px; letter-spacing: -0.02em; }
+  .updated { font-size: 14px; color: #6B6560; margin-bottom: 32px; }
+  h2 { font-size: 18px; font-weight: 600; margin-top: 28px; margin-bottom: 8px; }
+  p { font-size: 15px; color: #333; margin-bottom: 14px; }
+  ul { margin-left: 20px; margin-bottom: 14px; }
+  li { font-size: 15px; color: #333; margin-bottom: 6px; }
+  a { color: #D4634B; }
+  .limited-use { background: #fff; border: 1px solid #E8E4DF; border-radius: 8px; padding: 16px 20px; margin: 20px 0; }
+  .limited-use p { font-size: 14px; margin-bottom: 0; }
+  .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #E8E4DF; font-size: 13px; color: #9E9893; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Mailcue Privacy Policy</h1>
+<p class="updated">Last updated: February 26, 2026</p>
+
+<p>Mailcue is a Chrome extension that lets you upload a CSV and schedule bulk email sends through your own Gmail account. This policy explains what data we access, how we use it, and how we protect it.</p>
+
+<h2>What we access</h2>
+<p>When you sign in with Google, Mailcue requests permission to:</p>
+<ul>
+  <li><strong>Send emails on your behalf</strong> (gmail.send) — this is how your scheduled emails get delivered through your Gmail account.</li>
+  <li><strong>Read your email address</strong> (gmail.readonly) — solely to display your email address in the extension and identify your account.</li>
+</ul>
+
+<h2>What we do with your data</h2>
+<ul>
+  <li><strong>CSV data</strong> — Your uploaded CSV (email addresses, subject lines, email bodies) is processed locally in your browser and on our scheduling server. It is used only to send emails at the times you choose. We do not analyse, share, or sell this data.</li>
+  <li><strong>Gmail credentials</strong> — Your OAuth tokens are stored securely on our server solely to send emails on your behalf at scheduled times. We never access your inbox, read your emails, or use your credentials for any purpose other than sending the emails you schedule.</li>
+  <li><strong>Scheduling data</strong> — We store your scheduled email content (recipients, subjects, bodies, send times) on our server temporarily so emails can be sent at the right time, even if your browser is closed. This data is automatically deleted after your batch is complete.</li>
+</ul>
+
+<h2>What we do NOT do</h2>
+<ul>
+  <li>We do not read, scan, or access your inbox or existing emails.</li>
+  <li>We do not sell, share, or transfer your data to third parties.</li>
+  <li>We do not use your data for advertising, analytics profiling, or AI model training.</li>
+  <li>We do not allow humans to read your email content.</li>
+  <li>We do not track email opens, clicks, or recipient behaviour.</li>
+</ul>
+
+<div class="limited-use">
+  <p><strong>Google API Services User Data Policy:</strong> Mailcue's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+</div>
+
+<h2>Data storage and security</h2>
+<p>Scheduling data is stored on Google Cloud infrastructure (Firestore) with encryption at rest. OAuth refresh tokens are stored securely and used only to send your scheduled emails. All data transmission uses HTTPS encryption.</p>
+
+<h2>Data retention</h2>
+<p>Completed batch data (sent emails, timestamps) is retained for 24 hours after completion for your reference, then automatically deleted. OAuth credentials are retained until you revoke access or delete your account.</p>
+
+<h2>Your rights</h2>
+<p>You can revoke Mailcue's access to your Gmail at any time by visiting <a href="https://myaccount.google.com/permissions" target="_blank">Google Account Permissions</a> and removing Mailcue. This immediately stops all scheduled sends and deletes your stored credentials.</p>
+
+<h2>Contact</h2>
+<p>If you have questions about this privacy policy or your data, contact us at: <a href="mailto:support@mailcue.com">support@mailcue.com</a></p>
+
+<div class="footer">
+  <p>Mailcue is operated by [Your Name / Business Name]. Registered in England and Wales.</p>
+</div>
+
+</div>
+</body>
+</html>
